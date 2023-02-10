@@ -1,0 +1,30 @@
+// Update is called once per frame
+    void Update()
+    {
+        //GetAxis returns the value of -1 (left), 0 (no key pressed), +1 (right)
+        horzInput = Input.GetAxis("Horizontal");       
+
+        //setting animator parameters
+        //for Run, running animation will be used as long as the keys are pressed (1 or -1, not 0)
+        anim.SetBool("Run", horzInput != 0);
+        anim.SetBool("Grounded", isGrounded());
+
+        //for interacting with object
+        if(Input.GetKeyDown(KeyCode.E)){
+            CheckInteraction();
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        }
+
+        //jump higher by longer key press. Normal jump by short key press
+        if (Input.GetKeyDown(KeyCode.UpArrow) && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
+        
+        Flip();
+            
+    }

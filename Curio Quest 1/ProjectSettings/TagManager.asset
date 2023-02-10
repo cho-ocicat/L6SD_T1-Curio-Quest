@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Grounded
+  - IronKey
+  - Checkpoint
+  - Gate
+  - OGRespawnCheck
+  - DialogueBox
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 933337689
+    locked: 0
+  - name: Midground
+    uniqueID: 1838072765
+    locked: 0
+  - name: Foreground
+    uniqueID: 3833312469
+    locked: 0
+  - name: Front
+    uniqueID: 1039471319
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
